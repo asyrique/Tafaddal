@@ -1,0 +1,36 @@
+<template name="frontPage">
+    <div id="header">
+            <p id="header_name">T</p>
+        </div>
+
+        <div id="shop_owners">
+            <p id="in_div_txt">Shop Owners</p>
+        </div>
+        <div id="search_bar">
+            <h3>
+                Search for
+                <i id="replace">a grocery item</i>
+            </h3>
+            <input type="text" placeholder="Type here" id="search_input">
+        </div>
+
+        <div id="search_results">
+            {{#each list}}
+                {{> listItem}}
+            {{/each}}
+        </div>
+        <button type="submit" id="map_results_toggle">Return to Results</button>
+        <div class="result_map">
+        </div>
+
+        <div id="footer">
+            
+            <div id="footer_links">
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <p id="footer_info">Tafaddel helps you to find the nearest store for your grocery item. </p>
+            <p id="love"> Made with Love. </p>
+            <script src="./css/jquery-1.11.2.min.js"></script>
+        </div>
+</template>
